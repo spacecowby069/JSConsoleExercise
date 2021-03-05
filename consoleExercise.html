@@ -26,9 +26,14 @@
       ];
       console.table(artists);
       setTimeout(() => {
-        h1.textContent = 'Hello, Console!';
+        h1.textContent = 'Hello, time has now passed!';
         console.log(h1.textContent);
-      }, 3000);
+      }, 10000);
+      for(i = 0; i < artists.length; i++){
+        if(artists[i].first == 'Chaim'){
+          document.querySelector('h1').textContent = 'Chaim! I found you!';
+        }
+      }
     </script>
   </body>
 </html>
